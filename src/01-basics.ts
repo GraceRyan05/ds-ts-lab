@@ -5,6 +5,16 @@ interface Friend {
 }
 
 
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number;
+    };
+}
+
+
 // (Optional) Change the names below to your friends.
 
 const friend1 = {
@@ -23,6 +33,9 @@ const friends = [friend1, friend2];
 console.log(friends[1]);
 
 //   -------------------
+
+
+
 const colleague1 = {
   name: "Ralph Graham",
   department: "Engineering",
