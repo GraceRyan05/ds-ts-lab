@@ -9,12 +9,14 @@ const friend1 = {
   name: "Paul Fleming",
   phone: "087-12345",
   age: 25,
+  dob: new Date("1998-11-20") ,
 };
 
 const friend2 = {
   name: "Jane Costello",
   phone: "086--12345",
   age: 31,
+  interests: ['Music', 'Sport']
 };
 
 
@@ -51,7 +53,6 @@ const colleague3 = {
     extension: 125,
   },
 };
-
 
 export const friends = [friend1, friend2]; 
 
