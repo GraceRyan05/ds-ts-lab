@@ -8,7 +8,7 @@ import {
 import { friends } from "./01-basics";
 
 
-const ColleagueV1  = {
+const colleague1: ColleagueV2 = {
   name: "Ralph Graham",
   department: "Engineering",
   contact: {
@@ -17,7 +17,7 @@ const ColleagueV1  = {
   },
 };
 
-const ColleagueV2 = {
+const colleague2: ColleagueV2 = {
   name: "Patti Burke",
   department: "Finance",
   contact: {
@@ -26,7 +26,7 @@ const ColleagueV2 = {
   },
 };
 
-const ColleagueV3 = {
+const colleague3: ColleagueV2 = {
   name: "Dean Sullivan",
   department: "HR",
   contact: {
