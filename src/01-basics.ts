@@ -8,6 +8,23 @@ interface Friend {
 }
 
 
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number;
+    };
+}
+
+
+interface ColleagueHistory {
+  current: Colleague[],
+  former: Colleague[]
+}
+
+
+
 const friend1: Friend = {
   name: "Paul Fleming",
   phone: "087-12345",
@@ -24,7 +41,7 @@ const friends: Friend[] = [friend1, friend2];
 console.log(friends[1]);
 
 //   -------------------
-const colleague1 = {
+const colleague1  = {
   name: "Ralph Graham",
   department: "Engineering",
   contact: {
@@ -50,7 +67,9 @@ const colleague3 = {
     extension: 125,
   },
 };
-const colleagues = {
+
+
+export const colleagues: ColleagueHistory = {
   current: [colleague1, colleague2, colleague3],
   former: [],
 };
