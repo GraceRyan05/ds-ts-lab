@@ -7,7 +7,7 @@ function older(f: Friend) : string {
      return `${f.name} is now ${f.age}` 
 }
 
-console.log(older(friends[0]))
+//console.log(older(friends[0]))
 
 
 
@@ -18,7 +18,7 @@ function highestExtension(cs: Colleague[]) { // Inferred retun type
   );
   return result[cs.length - 1];
 }
-console.log(highestExtension(colleagues.current));
+//console.log(highestExtension(colleagues.current));
 
 
 //adds a colleague to an array, and set their extension number to the highest extension, plus 1
@@ -36,7 +36,7 @@ function addColleague(cs: Colleague[], name: string, department: string, email: 
 }
 
 addColleague(colleagues.current, "Sheild O Connell", "HR", "soc@here.com");
-console.log(colleagues.current.filter((c) => c.name === "Sheild O Connell"));
+//console.log(colleagues.current.filter((c) => c.name === "Sheild O Connell"));
 
 
 
@@ -54,9 +54,9 @@ function sortColleagues(
   return fullResult.slice(0,end)
 }
 // Test invocations
-console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
 
 //FindFriends function that searches an array of friends for those that satisfy a criterion.
 //The criterion is specified as a callback
@@ -67,5 +67,18 @@ function findFriends(friends: Friend[],
     return result;
 }
 
-console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
-console.log(findFriends(friends, (friend) => friend.age < 35));
+//console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
+//console.log(findFriends(friends, (friend) => friend.age < 35));
+
+
+//Add an interest to a friend's array of interests and returns the updated interests array (of strings)
+function addInterest(friend: Friend, interest: string) {
+    if (!friend.interests) {
+        friend.interests = [];
+    }
+    friend.interests.push(interest);
+    return friend.interests;
+}
+
+
+console.log(addInterest(friends[0], 'Politics'))
