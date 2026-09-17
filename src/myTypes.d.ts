@@ -57,3 +57,5 @@ export type EventPass = Omit<Colleague, "contact"> & {
 export type SecureFriendContact = Readonly<Pick<Friend,"name" | "phone" > >
 
 
+//Forgot to add errors to commit message.
+//New commit with error messages attached.
